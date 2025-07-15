@@ -14,4 +14,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    // Burger menu for mobile navigation
+    var burger = document.querySelector('.burger');
+    var navLinks = document.querySelector('.nav-links');
+    var navLinkItems = document.querySelectorAll('.nav-link');
+    if (burger && navLinks) {
+        burger.addEventListener('click', function() {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+        // Close menu when a nav-link is clicked (on mobile)
+        navLinkItems.forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('nav-active');
+                    burger.classList.remove('toggle');
+                }
+            });
+        });
+    }
 }); 
