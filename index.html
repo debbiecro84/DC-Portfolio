@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/DC-logo.png" alt="Logo" class="logo-img">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link"><span>Home</span></a></li>
+                <li><a href="about.html" class="nav-link"><span>About</span></a></li>
+                <li><a href="#skills" class="nav-link"><span>Skills & Education</span></a></li>
+                <li><a href="#projects" class="nav-link"><span>Projects</span></a></li>
+                <li><a href="cv.html" class="nav-link"><span>CV</span></a></li>
+                <li><a href="contact.html" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <p class="hero-intro">Hello, It's Me</p>
+                <h1>Debbie</h1>
+                <h3>I'm a <span class="hero-highlight">Junior Web & Design Developer</span></h3>
+                <p class="hero-description">Please hold your breath as we dive into a world full of creativity with Junior Web & Design Developer Debbie, currently studying Digital Development at the University of the West of Scotland.</p>
+                <div class="hero-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="#projects" class="cta-button">See Portfolio</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/me-animation.png" alt="Debbie">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div style="text-align:center; margin-top:2.5rem;">
+            <i class="fas fa-tools" style="font-size:2.2rem;color:var(--primary-orange);margin-bottom:0.5rem;"></i>
+            <h2 >My Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fas fa-code" style="font-size:2.2rem;color:var(--primary-orange);"></i>
+                        <h4>Frontend</h4>
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fab fa-figma" style="font-size:2.2rem;color:var(--primary-orange);"></i>
+                        <h4>Design Tools</h4>
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>Figma</li>
+                            <li>Canva</li>
+                            <li>Pixlr</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fas fa-server" style="font-size:2.2rem;color:var(--primary-orange);"></i>
+                        <h4>Backend</h4>
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>PHP</li>
+                            <li>Node.js</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <i class="fas fa-lightbulb" style="font-size:2.2rem;color:var(--primary-orange);"></i>
+                        <h4>Other</h4>
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                            <li>UI/UX Principles</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div style="text-align:center; margin-top:2.5rem;">
+            <i class="fas fa-graduation-cap" style="font-size:2.2rem;color:var(--primary-orange);margin-bottom:0.5rem;"></i>
+            <h2>Education</h2>
+        </div>
+        <div class="education-cards-wrapper">
+            <div class="education-card-v2">
+                <i class="fas fa-graduation-cap" style="font-size:2rem;color:var(--primary-orange);"></i>
+                <div class="edu-title">HNC Web Development &amp; Design</div>
+                <a class="edu-institution" href="#" target="_blank">New College Lanarkshire</a>
+                <div class="edu-dates">2023 - 2024</div>
+                <div class="edu-desc">Specialising in web development and UI design. (Grade A)</div>
+            </div>
+            <div class="education-card-v2">
+                <i class="fas fa-laptop-code" style="font-size:2rem;color:var(--primary-orange);"></i>
+                <div class="edu-title">HND Web Development &amp; Design</div>
+                <a class="edu-institution" href="#" target="_blank">New College Lanarkshire</a>
+                <div class="edu-dates">2024 - 2025</div>
+                <div class="edu-desc">Focus on full-stack web development, backend integration, and user experience, based on my work for the Ananda Animal Sanctuary project. (Grade A)</div>
+            </div>
+            <div class="education-card-v2">
+                <i class="fas fa-university" style="font-size:2rem;color:var(--primary-orange);"></i>
+                <div class="edu-title">BSc (Hons) Digital Development</div>
+                <a class="edu-institution" href="#" target="_blank">University of the West of Scotland</a>
+                <div class="edu-dates">2025 - Current</div>
+                <div class="edu-desc">Currently studying for a Bachelor’s degree in Digital Development.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div style="text-align:center; margin-top:2.5rem;">
+            <i class="fas fa-folder-open" style="font-size:2.2rem;color:var(--primary-orange);margin-bottom:0.5rem;"></i>
+            <h2>My Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/bkb-cover.png" alt="Bike King Borders">
+                <h3>Bike King Borders</h3>
+                <p>A website for a bike shop offering trail options, bike rentals, professional servicing, and biking equipment. "A journey of a thousand miles begins with a single pedal."<br><span style="color:#aaa;font-size:0.95em;">This was my first website project.</span></p>
+                <a href="http://debbiebkbcross.atwebpages.com/Index.html" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/orbits-order-cover.png" alt="Orbits Order Game">
+                <h3>Orbits Order</h3>
+                <p>A web-based game built with JavaScript, featuring a drag-and-drop function. <strong>Best played on a larger screen.</strong><br><span style="color:#ff6b00;font-weight:bold;">Not suitable for mobile devices.</span><br><span style="color:#aaa;font-size:0.95em;">Mobile version coming soon.</span></p>
+                <a href="https://debbiecro84.github.io/Orbits.Order/" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/vinyl-cover.png" alt="Vinyls Online">
+                <h3>Vinyls Online</h3>
+                <p>A custom-coded website for vinyl records, featuring the latest and trending albums and singles, user login and registration, and a modern browsing experience. This project was built entirely by me, including a PHP backend for dynamic content and user management.</p>
+                <a href="http://debbies-vinylsonline.atwebpages.com/" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/JS-cover.png" alt="Jo Smith Photography">
+                <h3>Jo Smith Photography</h3>
+                <p>A portfolio website for a photographer, showcasing work and providing an entry point for visitors.</p>
+                <a href="https://debbiecro84.github.io/jo-smith-photography/index.html" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="images/ananda-cover.png" alt="Ananda Animal Sanctuary">
+                <h3>Ananda Animal Sanctuary</h3>
+                <p>A website for a vegan animal charity and sanctuary, providing lifelong care and compassion for rescued farm animals. Includes information about animals, events, volunteering, and ways to support the sanctuary.</p>
+                <a href="http://anandaproject.atwebpages.com/" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
