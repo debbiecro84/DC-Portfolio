@@ -27,7 +27,7 @@ body {
     flex-direction: column;
 }
 
-main, .main-content, .cv-content, .content-wrapper {
+.content-wrapper {
     flex: 1 0 auto;
     padding-top: 100px; /* Adjust to match navbar height */
 }
