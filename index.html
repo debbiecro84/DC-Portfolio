@@ -190,12 +190,17 @@
                 <p>A portfolio website for a photographer, showcasing work and providing an entry point for visitors.</p>
                 <a href="https://debbiecro84.github.io/jo-smith-photography/index.html" class="project-link" target="_blank">View Project</a>
             </div>
-            <div class="project-card">
-                <img src="images/ananda-cover.png" alt="Ananda Animal Sanctuary">
-                <h3>Ananda Animal Sanctuary</h3>
-                <p>A website for a vegan animal charity and sanctuary, providing lifelong care and compassion for rescued farm animals. Includes information about animals, events, volunteering, and ways to support the sanctuary.</p>
-                <a href="http://anandaproject.atwebpages.com/" class="project-link" target="_blank">View Project</a>
-            </div>
+                <div class="project-card">
+            <img src="images/ananda-cover.png" alt="Ananda Animal Sanctuary">
+            <h3>Ananda Animal Sanctuary</h3>
+            <p>A website for a vegan animal charity and sanctuary, providing lifelong care and compassion for rescued farm animals. Includes information about animals, events, volunteering, and ways to support the sanctuary.</p>
+            <a href="#" class="project-link" onclick="openModal('Ananda Animal Sanctuary', [
+                { text: 'View Website', url: 'http://anandaproject.atwebpages.com/' },
+                { text: 'View Moodboard', url: 'images/Ananda NavMap.png' },
+                { text: 'View Wireframes', url: 'images/Ananda-Wireframe-Desktop.pdf' },
+                { text: 'View Logo', url: 'images/anandaLogo.png' }
+            ]); return false;">View Options</a>
+        </div>
         </div>
     </section>
 
@@ -208,6 +213,17 @@
         </div>
         <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
+
+<!-- Project Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title">Project Name</h3>
+    <div id="modal-links">
+      <!-- Links will be inserted dynamically -->
+    </div>
+  </div>
+</div>
 
     <script src="script.js"></script>
 </body>

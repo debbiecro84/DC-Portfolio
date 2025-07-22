@@ -34,3 +34,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 }); 
+
+
+function openModal(projectName, links) {
+  document.getElementById("modal-title").innerText = projectName;
+
+  const container = document.getElementById("modal-links");
+  container.innerHTML = "";
+  links.forEach(link => {
+    const a = document.createElement("a");
+    a.href = link.url;
+    a.target = "_blank";
+    a.innerText = link.text;
+    container.appendChild(a);
+  });
+
+  document.getElementById("projectModal").style.display = "block";
+}
+
+document.querySelector(".close").onclick = function() {
+  document.getElementById("projectModal").style.display = "none";
+};
+
+window.onclick = function(event) {
+  const modal = document.getElementById("projectModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
