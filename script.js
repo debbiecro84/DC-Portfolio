@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }); 
 
-
+//model function for projects
 function openModal(projectName, links) {
   document.getElementById("modal-title").innerText = projectName;
 
